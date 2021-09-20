@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<script type="text/javascript" src="part3.js"></script>
+	<link rel="stylesheet" href="part3.css" type="text/css">
+	<style type="text/css">
+		#stageTwo, #stageThree, #stageFour{
+			display: none;
+		}
+	
+	
+	
+	</style>
+</head>
+
+<body>
+	<!--first stage -->
+<form method="get" action="register.php" onSubmit="return processForm()">
+	<div id="stageOne">
+		<h1>Stage 1 of 4</h1>
+		<h2>Group Leader's Information:</h2>
+		Full Name: <input type="text" name="firstname" id="firstname"><br>
+		<br>
+		
+		Last name: <input type="text" name="lastname" id="lastname"><br>
+		<br>
+		
+		Age: <input type="number" name="age" id="age"><br>
+		<br>
+
+		Email: <input type="text" name="email" id="email"><br>
+		<br>
+		
+		Number: <input type="text" name="number" id="number"><br>
+		<br>
+		<button type="button" id="btnStageOne" onClick="processStageOne()">Next</button>
+		<br> <hr>
+	
+	</div>
+	
+	<!-- stage two start here-->
+	<div id="stageTwo">
+		<h1>Stage 2 of 4</h1>
+		<h2>Other members information:</h2>
+		How many people are you travelling with (+18):<input type="number" name="count1" id="count1"><br>
+		<br>
+		How many children (+18):<input type="number" name="count2" id="count2"><br>
+		<br>
+		Do you prefer "Hut" or "Tent":<br>
+		<input type="radio" name="live" id="hut">Hut<br>
+		<input type="radio"  name="live" id="tent">Tent<br>
+		<br>
+		
+		
+		
+		<button type="button" id="btnStageTwo" onClick="processStageTwo()">Next</button>
+		<br><hr>
+	</div>
+	
+	<!--third stage-->
+	<div id="stageThree">
+		<h1>Stage 3 of 4</h1>
+		<h2>Genaral Information</h2><br>
+		What meals do you prefer?:<br>
+		<input type="checkbox" id="breakfast" name="breakfast">Breakfast<br>
+		<input type="checkbox" id="lunch" name="lunch">Lunch<br>
+		<input type="checkbox" id="dinner" name="dinner">Dinner<br>
+		<br><br>
+		
+		
+		Comment:<textarea id="comment" name="comment" rows="10" cols="10">
+		</textarea><br>
+		<br>
+		what distance do you like to travel?(Km)<br>
+		<input type="range" name="area" id="area"><br>
+		<br>
+		*Me and my group agree to follo all rules and conditions:<br>
+		Agree:<input type="checkbox" id="check">
+	
+
+
+		
+		<br>
+		<button type="button" id="btnStageThree" onClick="processStageThree()">Next</button>
+		<br><hr>
+	</div>
+	
+	<!--last stage-->
+	<div id="stageFour">
+		<h1>Stage 4 of 4</h1>
+		<h2>Summery</h2>
+		<br>
+		First Name:<p id="viewFirstname"></p><hr>
+		<br>
+		Last Name:<p id="viewLastname"></p><hr>
+		<br>
+		Age:<p id="viewAge"></p><hr>
+		<br>
+		Email:<p id="viewEmail"></p><hr>
+		<br>
+		Contact Number:<p id="viewNumber"></p><hr>
+		<br>
+		Number of people (+18):<p id="viewCount1"></p><hr>
+		<br>
+		Number of children (18 below):<p id="viewCount2"></p><hr>
+		<br>
+		You prefer:<p id="viewHut"></p><hr>
+		<br>
+		You prefer:<p id="viewTent"></p><hr>
+		<br>
+		You prefer:<p id="viewBreakfast"></p><hr>
+		<br>
+		Comments :<p id="viewComment"></p><hr>
+		<br>
+		Hike Distance :<p id="viewArea"></p><hr>
+		<br>
+		You agree with our terms:<p id="viewCheck"></p><hr>
+		<br><br><hr><br>
+		<hr><hr>
+		<p>*Read carefully summery page. If you want to edit reload the page. if you want summery please enter your email address and click submit button</p><br>
+		Email: <input type="text" name="email2" id="email2">
+		<hr><hr>
+		
+		<input type="submit" value="Submit">
+		
+	
+	</div>
+</form>
+</body>
+</html>

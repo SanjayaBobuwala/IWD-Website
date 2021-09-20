@@ -1,0 +1,581 @@
+@charset "utf-8";
+/* CSS Document */
+.mainBox{
+	position: absolute;
+	overflow: hidden;
+	width: 275px;
+	height: 575px;
+	border: 3px solid #000;
+	
+	
+	background-size: 275px 575px;
+}
+
+/*-------------------------------------PAGE-1--------------------------------------------------------*/
+.box{
+	position: absolute;
+	/*overflow: hidden;*/
+	width: 275px;
+	height: 575px;
+	/*border: 3px solid #000;*/
+	background: url("_Baleno-Gen-1280x720-5_wide.jpg");
+	
+	background-size: 275px 575px;
+}
+
+/*--page1 suzuki logo--*/
+.logo {
+    width: 185px;
+    height: 115px;
+    position: absolute;
+    margin-left: 37px;
+    margin-top: 86px;
+    background-image: url(logo.png);
+    background-repeat: no-repeat;
+    background-size: 237px 122px;
+    opacity: 0;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-name: logoMove;
+    animation-fill-mode: forwards;
+}
+
+/*--page1 baleno logo--*/
+.logo2 {
+    width: 244px;
+    height: 207px;
+    position: absolute;
+    margin-left: 1px;
+    margin-top: 112px;
+    background-image: url(baleno.png);
+    background-repeat: no-repeat;
+    background-size: 310px 178px;
+    opacity: 1;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-name: logoMove;
+    animation-fill-mode: forwards;
+}
+
+@keyframes logoMove{
+	0% {opacity: 1; }
+	100% {opacity: 1; }
+	}
+
+.everydayText{
+	position: absolute;
+	color: transparent;
+	font-size: 31px;
+	
+	font-family: fantasy;
+	animation-name: textMidMove;
+	animation-delay: 0s;
+	animation-duration: 6s;
+	margin-top: 459px;
+	margin-left: 44px;
+	line-height: 10%;
+}
+
+.ExceptionalText{
+    position: absolute;
+    color: transparent; 
+    font-size: 51px;
+    font-family: Brush Script MT;
+    animation-name: textMidMove;
+    animation-delay: 0s;
+    animation-duration: 6s;
+    margin-top: 489px;
+    margin-left: 26px;
+    line-height: 10%;
+}
+
+@keyframes textMidMove{
+	0%{opacity: 100%; color: white;}
+	100%{opacity: 100%; color: white;}
+}
+
+/*----page1 bottom text---*/
+.text1{
+	position: absolute;
+	color: transparent;
+	font-size: 14px;
+	font-family: "Calibri Light (Headings)";
+	animation-name: text1Move;
+	animation-delay: 0s;
+	animation-duration: 3s;
+	margin-top: 517px;
+	margin-left: 44px;
+	line-height: 10%;
+}
+
+@keyframes text1Move{
+	0%{opacity: 100%; color: white;}
+	50%{opacity: 90%; color: white;}
+	75%{opacity: 70%; color: white;}
+	100%{opacity: 5%; color: white;}
+}
+
+.text2{
+	position: absolute;
+	color: transparent;
+	font-size: 14px;
+	font-family: "Calibri Light (Headings)";
+	animation-name: textMove2;
+	animation-delay: 3s;
+	animation-duration: 3s;
+	margin-top: 517px;
+	margin-left: 44px;
+	line-height: 10%;
+}
+
+@keyframes textMove2{
+	0%{opacity: 40%; color: white;}
+	50%{opacity: 70%; color: white;}
+	100%{opacity: 100%; color: white;}
+}
+
+/*--------------------------------------------PAGE -2------------------------------------------------*/
+
+.page2{ 		
+	width: 275px;
+    height: 575px;
+	position: absolute;
+	border: #000000;
+    background-image: url("maxresdefault.jpg");
+	background-repeat: no-repeat;
+	background-size: 275px 575px;
+	opacity: 0;
+	animation-duration: 3s;
+	animation-delay: 6s;
+	animation-name: page2Move ;
+	animation-fill-mode: forwards;
+}
+
+@keyframes page2Move{
+	0% {opacity: 0; }
+	100% {opacity: 1; }
+	}
+
+/*----page 2 text-------*/
+.extraOrdiPage2Text {
+    position: absolute;
+    color: transparent;
+    font-size: 26px;
+    font-family: fantasy;
+    animation-name: extraOrdiPage2Move;
+    animation-delay: 6s;
+    animation-duration: 3s;
+    margin-top: 90px;
+    margin-left: 87px;
+    line-height: 10%;
+}
+
+@keyframes extraOrdiPage2Move {
+	0% { margin-left: 140px; color: white; opacity: 10%;}
+	/*50% { margin-left: 98.5px; color: white; opacity: 90%;}*/
+    100% { margin-left: 87px; color: white; opacity: 100%;}
+}
+
+.EconomyPage2Text {
+    position: absolute;
+    color: transparent; 
+    font-size: 77px;
+    font-family: Brush Script MT;
+    animation-name: EconomyPage2Move;
+    animation-delay: 6s;
+    animation-duration: 3s;
+    margin-top: 116px;
+    margin-left: 27px;
+    line-height: 10%;
+}
+@keyframes EconomyPage2Move {
+	0% { margin-left: -20px; color: white; opacity: 10%;}
+	/*50% { margin-left: 18.5px; color: white; opacity: 90%;}*/
+    100% { margin-left: 27px; color: white; opacity: 100%;}
+}
+
+
+/*--Award logo appears--*/
+.logo3 {
+    width: 215px;
+    height: 165px;
+    position: absolute;
+    margin-left: 52px;
+    margin-top: 364px;
+    background-image: url(logo2.png);
+    background-repeat: no-repeat;
+    background-size: 168px 189px;
+    opacity: 0;
+    animation-duration: 9s;
+    animation-delay: 6s;
+    animation-name: logo3Move;
+    animation-fill-mode: forwards;
+}
+@keyframes logo3Move{
+	0% {opacity: 0; }
+	100% {opacity: 1;  }
+	}
+
+
+
+/*----------------------------------------PAGE-3------------------------------------------------------------*/
+.page3	{ 		
+	width: 275px;
+    height: 575px;
+	position: absolute;
+	border: #000000;
+    background-image: url("inside.webp");
+	background-repeat: no-repeat;
+	background-size: 275px 575px;
+	opacity: 0;
+	animation-duration: 3s;
+	animation-delay: 9s;
+	animation-name: page3Move ;
+	animation-fill-mode: forwards;
+}
+
+@keyframes page3Move{
+	0% {opacity: 0; }
+	100% {opacity: 1; }
+	}
+
+.unmatchedText {
+    position: absolute;
+    color: transparent; 
+    font-size: 28px;
+    font-family: fantasy;
+    animation-name: unmatchedTextMove;
+    animation-delay: 9s;
+    animation-duration: 3s;
+    margin-top: 195px;
+    margin-left: 48px;
+    line-height: 10%;
+}
+
+@keyframes unmatchedTextMove {
+	0% { margin-left: 10px; color: white; opacity: 20%;}
+    100% { margin-left: 48px; color: white; opacity: 100%;}
+}
+
+/*--style text appears--*/
+.styleText {
+    position: absolute;
+    color: transparent; 
+    font-size: 107px;
+    font-family: Vladimir Script;
+    animation-name: styleTextMove;
+    animation-delay: 9s;
+    animation-duration: 3s;
+    margin-top: 256px;
+    margin-left: 55px;
+    line-height: 10%;
+}
+@keyframes styleTextMove {
+	0% { margin-left: 110px; color: white; opacity: 20%;}
+    100% { margin-left: 55px; color: white; opacity: 100%;}
+}
+
+
+
+/*--------------------------------------------------------------PAGE-4-----------------------------------------*/
+.page4	{ 		
+	width: 275px;
+    height: 575px;
+	position: absolute;
+	border: #000000;
+    background-image: url("_Baleno-Gen-1280x720-5_wide.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	opacity: 0;
+	animation-duration: 3s;
+	animation-delay: 12s;
+	animation-name: page4Move ;
+	animation-fill-mode: forwards;
+	
+}
+
+@keyframes page4Move{
+	0% {opacity: 0; }
+	100% {opacity: 1; }
+	}
+
+
+/*------Page4--zoom-part---*/
+.zoom{
+	position: relative;
+	height: 575px;
+	width: 275px;
+	overflow: hidden;
+	/*display: flex;*/
+	justify-content: center;
+	color: #fff;
+}
+
+.zoom:after{
+	content: '';
+	position: absolute;
+	/*z-index: -1;
+	left: 0;
+	bottom: 0;*/
+}
+.zoom:before{
+	content: '';
+	width: 275px;
+	height: 575px;
+	position: absolute;
+	/*top: 0;
+	left: 0;*/
+	backface-visibility: hidden;
+	transform: translateZ(0) scale(1.0, 1.0);
+	background-image: url("_Baleno-Gen-1280x720-5_wide.jpg");
+	background-size: 275px 575px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	animation: increase 3s  ;
+	animation-delay: 15s;
+	/*transition: all 0.2s ease-in-out;*/
+	/*z-index: -2;*/
+}
+
+@keyframes increase {
+	0%{transform: scale(1)}
+	100%{transform: scale(1.2)}
+}
+
+/**--suzuki_logo--*/
+.logoPage4 {
+    width: 185px;
+    height: 115px;
+    position: absolute;
+    margin-left: 37px;
+    margin-top: 86px;
+    background-image: url(logo.png);
+    background-repeat: no-repeat;
+    background-size: 237px 122px;
+    opacity: 0;
+    animation-duration: 3s;
+    animation-delay: 12s;
+    animation-name: logoPage4Move;
+    animation-fill-mode: forwards;
+}
+
+/*--Baleno_logo--*/
+.logo2Page4 {
+    width: 244px;
+    height: 207px;
+    position: absolute;
+    margin-left: 1px;
+    margin-top: 112px;
+    background-image: url(baleno.png);
+    background-repeat: no-repeat;
+    background-size: 310px 178px;
+    opacity: 0;
+    animation-duration: 3s;
+    animation-delay: 12s;
+    animation-name: logoPage4Move;
+    animation-fill-mode: forwards;
+}
+
+@keyframes logoPage4Move{
+	0% {opacity: 0; }
+	100% {opacity: 1; }
+	}
+
+
+.everdayPage4Text {
+    position: absolute;
+    color: transparent; 
+    font-size: 31px;
+    font-family: fantasy;
+    animation-name: everdayPage4TextMove;
+    animation-delay: 12s;
+    animation-duration: 3s;
+    margin-top: 451px;
+    margin-left: 71px;
+    /* line-height: 10%; */
+}
+
+@keyframes everdayPage4TextMove {
+	0% { margin-left: 10px; color: white; opacity: 20;}
+    100% { margin-left: 71px; color: white; opacity: 100%;}
+}
+
+.exceptiPage4Text {
+    position: absolute;
+    color: transparent; 
+    font-size: 60px;
+    font-family: Vladimir Script;
+    animation-name: exceptiPage4TextMove;
+    animation-delay: 12s;
+    animation-duration: 3s;
+    margin-top: 492px;
+    margin-left: 16px;
+    line-height: 10%;
+}
+@keyframes exceptiPage4TextMove {
+	0% { margin-left: 110px; color: white; opacity: 20%;}
+    100% { margin-left: 16px; color: white; opacity: 100%;}
+}
+
+
+/*--everyday and eceptional text moving to the top--*/
+
+.everdayPage4TopText {
+    position: absolute;
+    color: transparent; 
+    font-size: 31px;
+    font-family: fantasy;
+    animation-name: everdayPage4TextTopMove;
+    animation-delay: 15s;
+    animation-duration: 2s;
+    margin-top: 451px;
+    margin-left: 71px;
+	
+   
+}
+
+@keyframes everdayPage4TextTopMove {
+	0% { margin-top: 451px; color: white; opacity: 100%;}
+	/*50% { margin-top: 445px; color: white; opacity: 100%;}*/
+    100% { margin-top: 429px; color: white; opacity: 100%;}
+}
+
+.exceptiPage4TopText {
+    position: absolute;
+     color: transparent; 
+    font-size: 60px;
+    font-family: Vladimir Script;
+    animation-name: exceptiPage4TextTopMove;
+    animation-delay: 15s;
+    animation-duration: 2s;
+    margin-top: 492px;
+    margin-left: 16px;
+    line-height: 10%;
+}
+@keyframes exceptiPage4TextTopMove {
+	0% { margin-top: 492px; color: white; opacity: 100%;}
+	/*50% { margin-top: 486px; color: white; opacity: 100%;}*/
+    100% { margin-top: 470px; color: white; opacity: 100%;}
+}
+
+
+
+/* -----stay top----*/
+/*----everyday text and eceptional text*/
+
+.everdayPage4Top1Text {
+    position: absolute;
+    color: transparent; 
+    font-size: 31px;
+    font-family: fantasy;
+    animation-name: everdayPage4TextTop1Move;
+    animation-delay: 17s;
+    animation-duration: 6s;
+    margin-top: 429px;
+    margin-left: 71px;
+	animation-iteration-count: infinite;
+    /* line-height: 10%; */
+}
+
+@keyframes everdayPage4TextTop1Move {
+	0% { margin-top: 429px; color: white; opacity: 100%;}
+    100% { margin-top: 429px; color: white; opacity: 100%;}
+}
+
+.exceptiPage4Top1Text {
+    position: absolute;
+    color: transparent; 
+    font-size: 60px;
+    font-family: Vladimir Script;
+    animation-name: exceptiPage4TextTop1Move;
+    animation-delay: 17s;
+    animation-duration: 6s;
+    margin-top: 470px;
+    margin-left: 16px;
+    line-height: 10%;
+	animation-iteration-count: infinite;
+}
+@keyframes exceptiPage4TextTop1Move {
+	0% { margin-top: 470px; color: white; opacity: 100%;}
+    100% { margin-top: 470px; color: white; opacity: 100%;}
+}
+
+
+
+
+/*-----------------------------------------*/
+
+.textBottomPage4{
+	position: absolute;
+	color: transparent;
+	font-size: 14px;
+	font-family: "Calibri Light (Headings)";
+	animation-name: textBottomPage4Move;
+	animation-delay: 16s;
+	animation-duration: 4s;
+	margin-top: 500px;
+	margin-left: 44px;
+	line-height: 10%;
+}
+
+@keyframes textBottomPage4Move{
+	0%{opacity: 25%; color: white;}
+	50%{opacity: 50%; color: white;}
+	75%{opacity: 75%; color: white;}
+	100%{opacity: 100%; color: white;}
+}
+
+
+.myName{
+	position: fixed;
+	color: black;
+	animation-iteration-count: infinite;
+	animation-delay: 0s;
+	animation-duration: 30s;
+	font-family: Times New Roman;
+	animation-name: myNameMove;
+	margin-left: 30px;
+    margin-top: 27px;
+			
+}
+
+@keyframes myNameMove{
+	0%{left: 71px; top:542px;}
+	100%{left: 71px; top:542px;}
+}
+
+
+
+.button2 {
+    display: block;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+    padding: 1em 0em;
+    width: 18em;
+    height: 36em;
+    border-radius: 10px;
+    border: none;
+    color: transparent;
+    margin-top: -1px;
+    position: relative;
+    margin-left: -1px;
+    animation-name: buttonPart2;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes buttonPart2{
+	
+	0%{background-color: transparent; }
+	100%{background-color: transparent;}
+}
+
+.button1:hover {
+  background-color: transparent;
+}
+
+
+
+

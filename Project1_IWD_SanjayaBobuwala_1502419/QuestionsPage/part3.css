@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+
+.mainBox{
+	width: 660px;
+	height: 660px;
+	float: left;
+	padding-left: 20px;
+	padding-top: 20px;
+	
+}
+
+.progressBar{
+	width: 620px;
+	height: 10px;
+	border: 2px solid black;
+}
+

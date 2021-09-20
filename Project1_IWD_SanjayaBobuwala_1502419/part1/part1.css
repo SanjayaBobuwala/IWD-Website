@@ -1,0 +1,435 @@
+@charset "utf-8";
+/* CSS Document */
+
+.example_path {
+	position: absolute;
+	overflow: hidden;
+	width: 850px;
+	height: 250px;
+	border: 3px solid #000;
+	
+}
+
+@keyframes bgcolor{
+	0%{background-color: aqua;}
+	50%{background-color: lightblue;}
+	100%{background-color: aqua;}
+}
+
+.outsidebox1 {
+	width: 850px;
+	height: 250px;
+	background-image: url("image1.jpg");
+	background-size: 850px 250px;
+	animation-name: bgcolor;
+	animation-duration: 3s;
+	animation-delay: 0s;
+}
+
+
+@keyframes movelake1{
+	0% {background-position: -850px 0px; }
+	100% {background-position: 0px 0px; }
+}
+
+.lakebox1	{ 		
+	width: 850px;
+    height: 250px;
+	border: #000000;
+    background-image: url("image2.jpg");
+    background-position: -850px 0px;
+	background-repeat: no-repeat;
+	background-size: 850px 250px;
+	animation-duration: 3s;
+	animation-delay: 4.5s;
+	animation-name: movelake1;
+	animation-fill-mode: forwards;
+}
+
+
+
+@keyframes movelake2{
+	0% {background-position: 0px -250px; }
+	100% {background-position: 0px 0px; }
+}
+
+.lakebox2	{ 		
+	width: 850px;
+    height: 250px;
+	border: #000000;
+    background-image: url("image3.jpg");
+    background-position: 0px -250px;
+	background-repeat: no-repeat;
+	background-size: 850px 250px;
+	animation-duration: 3s;
+	animation-delay: 7s;
+	animation-name: movelake2;
+	animation-fill-mode: forwards;
+}
+
+@keyframes movelake3{
+	0% {opacity: 0; }
+	100% {opacity: 1; }
+}
+
+.lakebox3	{ 		
+	width: 850px;
+    height: 250px;
+	position: absolute;
+	border: #000000;
+    background-image: url("image4.jpg");
+	background-repeat: no-repeat;
+	background-size: 850px 250px;
+	opacity: 0;
+	animation-duration: 3s;
+	animation-delay: 10s;
+	animation-name: movelake3;
+	animation-fill-mode: forwards;
+}
+
+@keyframes movelake4{
+	0% {opacity: 0; }
+	100% {opacity: 1; }
+}
+
+.lakebox4	{ 		
+	width: 850px;
+    height: 250px;
+	border: #000000;
+    background-image: url("image1.jpg");
+	background-repeat: no-repeat;
+	background-size: 850px 250px;
+	opacity: 0;
+	animation-duration: 8s;
+	animation-delay: 15s;
+	animation-name: movelake4;
+	animation-fill-mode: forwards;
+}
+
+.mainText{
+	/*font-size: 25px;*/
+	font-weight: 900;
+	/*float: none;*/
+	position: absolute;
+	color: transparent;
+	font-family: Chiller;
+	animation-name: textMove;
+	animation-duration: 3s;
+	animation-delay: 3s;
+	
+}
+
+@keyframes textMove{
+	0%{
+		font-size: 70px;
+		left:35%;
+		margin-top: 10%;
+		opacity: 0%;
+	}
+	50%{
+		font-size: 80px;
+		left: 35%; 
+		color: whitesmoke;
+		margin-top: 10%;
+		opacity: 100%;
+	}
+	100%{font-size: 70px;
+		left: 35%; 
+		color: whitesmoke;
+		margin-top: 10%;
+		opacity: 0%;
+		
+	}
+	
+}
+
+.mainText2{
+	position: absolute;
+	
+	font-size: 25px;
+	float: left;
+	color: transparent;
+	font-family: Jokerman; 
+	animation-name: textMove2;
+	animation-duration: 3s;
+	animation-delay: 6s;
+}
+		
+@keyframes textMove2{
+	0%{
+		font-size: 50px;
+		margin-top: 0px;
+		width: 500px;
+		opacity: 30%;
+		color: black;
+		
+	}
+	50%{
+		font-size: 50px; 
+		color: orange;
+		margin-top: 125px;
+		width: 500px;
+		opacity: 100%;
+	}
+	100%{
+		font-size: 25px; 
+		color: orange;
+		margin-top: 250px;
+		width: 500px;
+		opacity: 30%;
+	}
+	
+}
+
+.mainText3{
+	position: absolute;
+	font-size: 25px;
+	margin-left: 500px;
+	color: transparent;
+	font-family: Matura MT Script Capitals; 
+	animation-name: textMove3;
+	animation-duration: 4s;
+	animation-delay: 8s;
+	
+}
+
+@keyframes textMove3{
+	0%{
+		font-size: 50px;
+		margin-top: 0px;
+		width: 500px;
+		opacity: 90%;
+		color: darkturquoise;
+		
+	}
+	50%{
+		font-size: 50px; 
+		color: darkturquoise;
+		margin-top: 125px;
+		width: 500px;
+		opacity: 100%;
+	}
+	
+	100%{
+		font-size: 50px; 
+		color: darkturquoise;
+		margin-top: 250px;
+		width: 500px;
+		opacity: 30%;
+	}
+	
+}
+
+.mainText4{
+	position: absolute;
+	font-size: 25px;
+	float: right;
+    color: transparent;
+	font-family: Blackadder ITC;
+	animation-name: textMove4;
+	animation-duration: 3s;
+	animation-delay: 12s;
+	
+}
+
+@keyframes textMove4{
+	 0% { font-size: 25px; color: cyan;}
+	50% { font-size: 75px; color: cyan;}
+    100% { font-size: 25px; color: cyan;}
+}
+
+
+.mainText5{
+	/*font-size: 25px;*/
+	font-weight: 900;
+	/*float: none;*/
+	position: absolute;
+	color: transparent;
+	font-family: Baskerville Old Face;
+	animation-name: textMove5;
+	animation-duration: 4s;
+	animation-delay: 18s;
+	
+}
+
+@keyframes textMove5{
+	0%{
+		font-size: 70px;
+		left:35%;
+		margin-top: 10%;
+		opacity: 80%;
+	}
+	50%{
+		font-size: 80px;
+		left: 35%; 
+		color: white;
+		margin-top: 10%;
+		opacity: 100%;
+	}
+	100%{font-size: 70px;
+		left: 35%; 
+		color: white;
+		margin-top: 10%;
+		opacity: 20%;
+		
+	}
+	
+}
+
+.mainText6{
+	/*font-size: 25px;*/
+	font-weight: 900;
+	/*float: none;*/
+	position: absolute;
+	color: transparent;
+	font-family: Baskerville Old Face;
+	animation-name: textMove6;
+	animation-duration: 4s;
+	animation-delay: 20.5s;
+	
+}
+
+@keyframes textMove6{
+	0%{
+		font-size: 70px;
+		left:35%;
+		margin-top: 10%;
+		opacity: 80%;
+	}
+	50%{
+		font-size: 80px;
+		left: 35%; 
+		color: white;
+		margin-top: 10%;
+		opacity: 100%;
+	}
+	100%{font-size: 70px;
+		left: 35%; 
+		color: black;
+		margin-top: 10%;
+		opacity: 80%;
+		
+	}
+	
+}
+
+
+
+
+
+
+
+#butterfly
+{
+	 position: absolute;
+	 z-index: 100;
+	 top: 50px;
+	 animation-duration: 14s;
+	 animation-name: fly;	
+	animation-iteration-count: 2;
+	
+}
+
+@keyframes fly {
+	0% {
+		transform: scale(0.1);
+		opacity: 0;
+		margin-left: 0%;
+		}		 
+	50% {
+		margin-left: 90%; 
+		opacity: 1;
+		transform: scale(0.7);
+		}
+	100% {    
+		margin-left: 0%;	
+		transform: scale(01);
+		} 		
+}
+
+
+
+
+.logo {
+	margin-top: -35px;
+    position: absolute;
+	color: aliceblue;
+	width: 336px;
+	height: 80px;
+	margin-left: 500px;
+}
+
+.button1 {
+	
+	display: block;
+	font-size: 15px;
+	text-decoration:none;
+	text-align: center;
+	padding: 1em 0em;
+	width: 7em;
+	border-radius: 10px;
+	/*background-color: tra;*/
+	border: none;
+	color: transparent;
+	margin-top: -83px;
+    position: absolute;
+    margin-left: 695px;
+	animation-name: buttonPart1;
+	animation-duration: 18s;
+	animation-delay: 2s;
+	
+	animation-fill-mode: forwards;
+	-webkit-animation-name: buttonPart1;
+	-webkit-animation-duration: 18s;
+	-webkit-animation-delay: 2s;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@keyframes buttonPart1{
+	
+	0%{background-color: transparent; color: transparent;}
+	100%{background-color: burlywood; color: white; border: 2px solid black;}
+}
+
+.button1:hover {
+  background-color: brown;
+}
+
+
+.myName {
+    font-size: 16px; 
+    /*font-weight: 900;*/
+    /* float: none; */
+    position: absolute;
+    color: white;
+    font-family: Baskerville Old Face;
+    animation-name: myNameMove;
+    animation-duration: 30s;
+    margin-top: -28px;
+    animation-iteration-count: infinite;
+    animation-delay: 0;
+    width: 842px;
+    height: 83px;
+}
+
+@keyframes myNameMove{
+	0%{
+		
+		opacity: 100%; color: chartreuse;
+	}
+	50%{
+		opacity: 100%; color: white;
+	}
+	
+	100%{opacity: 100%;color: burlywood;
+	}
+		
+	
+}
+
+
+
+
+
+
+
